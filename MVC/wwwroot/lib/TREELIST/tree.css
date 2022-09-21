@@ -1,0 +1,155 @@
+/*Start Popup Add Product List */
+#left ul.nav {
+    margin-bottom: 2px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 40px;
+    width: 400px;
+}
+
+    #left ul.nav ul,
+    #left ul.nav ul li {
+        list-style: none !important;
+        list-style-type: none !important;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    #left ul.nav ul {
+        padding-left: 0;
+        width: auto;
+    }
+
+        #left ul.nav ul.children {
+            padding-left: 12px;
+            width: 100%;
+            text-align: center;
+        }
+
+            #left ul.nav ul.children li {
+                margin-left: 0px;
+            }
+
+    #left ul.nav li a:hover {
+        text-decoration: none;
+    }
+
+        #left ul.nav li a:hover .lbl {
+            color: #999 !important;
+        }
+
+    #left ul.nav li.current > a .lbl {
+        background-color: #999;
+        color: #fff !important;
+    }
+
+    /* parent item */
+    #left ul.nav li.parent a {
+        padding: 0px;
+        color: #ccc;
+    }
+    #left ul.nav > li.parent{
+        cursor: pointer;
+    }
+    #left ul.nav > li.parent > a {
+        text-transform: uppercase;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        background-color: #f6f6f6;
+    }
+
+    #left ul.nav li.parent a:hover {
+        background-color: #fff;
+    }
+    #left ul.nav li.parent a .lbl.active {
+        color: #0568a9 !important
+    }
+    /* link tag (a)*/
+    #left ul.nav li.parent ul li a {
+        color: #222;
+        border: none;
+        display: block;
+        padding-left: 5px;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+        #left ul.nav li.parent ul li a:hover {
+            background-color: #fff;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+        }
+
+    /* sign for parent item */
+    #left ul.nav li .sign {
+        display: inline-block;
+        width: 14px;
+        padding: 5px 8px;
+        background-color: transparent;
+        color: #fff;
+    }
+
+.children.nav-child .sign i {
+    color: #fff;
+}
+
+    .children.nav-child .sign i.fa-play {
+        color: #000;
+    }
+
+#left ul.nav li.parent > a > .sign {
+    margin-left: 0px;
+    background-color: #0568a9;
+    width: 24px;
+}
+
+/* label */
+#left ul.nav li .lbl {
+    padding: 5px 12px;
+    display: inline-block;
+}
+
+#left ul.nav li.current > a > .lbl {
+    color: #fff;
+}
+
+#left ul.nav li a .lbl {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+/* THEMATIQUE
+------------------------- */
+/* theme 1 */
+#left ul.nav > li.item.parent > a {
+    /*border: solid 1px #ff6307;*/
+}
+
+    #left ul.nav > li.item .parent > a > .sign,
+    #left ul.nav > li.item li.parent > a > .sign {
+        margin-left: 0px;
+        background-color: #0568A9;
+    }
+
+#left ul.nav > li.item-1 .lbl {
+    color: #000;
+}
+
+#left ul.nav > li.item li.current > a .lbl {
+    background-color: #ff6307;
+    color: #fff !important;
+}
+
+
+
+span.collapsed i {
+    color: #FFF;
+    position: relative;
+    left: 1px;
+}
+/*End Popup Add Product List */

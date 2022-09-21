@@ -1,0 +1,169 @@
+.rolyart-calendar {
+    max-width: 345px;
+    max-height: 360px;
+    background-color: white;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 45px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    margin: 50px auto;
+}
+
+.calendar-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 16px;
+  position: relative;
+}
+    .calendar-header:after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        width: 80%;
+        height: 2px;
+        background-color: #ddd;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .calendar-header h3 {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+.calendar-header .calendar-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+    .calendar-header .calendar-control button {
+        width: 34px;
+        height: 34px;
+        padding: 0;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        font-size: 15px;
+        border-radius: 3px;
+        color: #787272;
+    }
+
+.calendar-header .calendar-control button.control-current-month {
+  margin: 0 8px;
+  width: 60px;
+}
+
+    .calendar-header .calendar-control button.control-current-month .current-month {
+        background-color: #1272b1;
+        content: '';
+        display: inline-block;
+        color: #fff;
+        padding: 0 5px;
+        border-radius: 5px;
+    }
+
+.week-days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 10px 0px 0px ;
+}
+
+    .week-days div {
+        width: calc(100% / 7);
+        text-align: center;
+        color: #7E818C;
+    }
+
+.calendar-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+    .calendar-body .day {
+        width: calc(100% / 7);
+        text-align: center;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+.calendar-body .day span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.calendar-body .day.active {
+  color: #5749EC;
+  font-weight: bold;
+}
+
+.calendar-body .day.selected {
+  font-weight: bold;
+}
+
+    .calendar-body .day.selected span {
+        background-color: #1272b1;
+        display: inline-block;
+        color: white;
+        border-radius: 50%;
+        -webkit-animation: pulse .4s ease;
+        animation: pulse .4s ease;
+    }
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  85% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  85% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.calendar-body .day.not-current {
+  color: #999999;
+}
+/*# sourceMappingURL=style.css.map */

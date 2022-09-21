@@ -1,0 +1,89 @@
+
+.flags-change {
+    /*    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;*/
+}
+
+    .flags-change input.country-number-inp {
+        height: 100%;
+    }
+
+    .flags-change input.code-country {
+        width: 55px;
+        height: 100%;
+    }
+
+    .flags-change > ul {
+        list-style: none;
+        height: 30px;
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+       height: 100%;
+    }
+
+    .flags-change ul img {
+        width: 30px !important;
+        cursor: pointer !important;
+    }
+
+    .flags-change ul .parent-list-country {
+        height: 100%;
+        width: 45px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .flags-change ul .parent-list-country .sub-menu-country-img {
+            position: absolute;
+            background: #e9e9e9;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            width: 180px;
+            top: 48px;
+            left: 0;
+            transition: all .3s;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(10px);
+            z-index: 1000000000000000;
+        }
+
+            .flags-change ul .parent-list-country .sub-menu-country-img.open {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .flags-change ul .parent-list-country .sub-menu-country-img li {
+                padding: 10px 0;
+                border-bottom: 1px solid #ddd;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .flags-change ul .parent-list-country .sub-menu-country-img li span {
+                    width: 50%;
+                    margin-left: 5px;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+
+                .flags-change ul .parent-list-country .sub-menu-country-img li:hover {
+                    background-color: #FFF;
+                }

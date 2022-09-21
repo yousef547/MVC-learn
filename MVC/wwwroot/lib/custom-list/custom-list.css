@@ -1,0 +1,106 @@
+﻿
+.custom-list {
+    display: flex;
+    gap: 100px;
+    max-width: 1120px;
+    overflow-x: auto;
+    margin: 20px auto;
+    padding: 20px 0
+}
+
+.custom-list-item {
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    position: relative
+}
+
+    .custom-list-item:not(:last-child)::before {
+        content: "";
+        width: 150px;
+        border: 1px solid #0568a9;
+        left: 55px;
+        position: absolute;
+        border-left: 0;
+        top: 99px;
+        border-right: 0;
+        border-bottom: 0;
+    }
+
+    .custom-list-item > .list-dot {
+        position: relative;
+        height: 30px;
+        width: 30px;
+        background-color: #fff;
+        border: 3px solid #0568A9;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .custom-list-item.active > .list-dot {
+        background-color: #0568A9
+    }
+
+    .custom-list-item.done > .list-dot {
+        background-color: #0568A9;
+    }
+
+        .custom-list-item.done > .list-dot::before {
+            position: absolute;
+            left: -2px;
+            top: 40%;
+            height: 7px;
+            width: 1.5px;
+            background-color: rgb(255, 255, 255);
+            content: "";
+            transform: translateX(10px) rotate(-45deg);
+            transform-origin: left bottom;
+        }
+
+        .custom-list-item.done > .list-dot::after {
+            position: absolute;
+            left: -2px;
+            bottom: 4px;
+            height: 1.5px;
+            width: 15px;
+            background-color: rgb(255, 255, 255);
+            content: "";
+            transform: translateX(11px) translateY(-3px) rotate(-45deg);
+            transform-origin: left bottom;
+        }
+
+    .custom-list-item.not-done > .list-dot {
+        border-color: red
+    }
+
+    .custom-list-item > .list-label {
+        margin: 10px 0;
+        color: #262262;
+        white-space: nowrap;
+        font-size: 14px;
+        font-weight: 700;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        -webkit-line-clamp: 1 !important;
+        -webkit-box-orient: vertical;
+    }
+
+    .custom-list-item > .list-img-container {
+        border: 1px solid #0568A9;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: inline-block
+    }
+
+        .custom-list-item > .list-img-container > .list-img {
+            height: 15px;
+            margin-top: 10px;
+            width: 100%;
+            object-fit: cover
+        }
+
+    .custom-list-item.done.active > .list-dot {
+        border-color: #ff8612;
+    }

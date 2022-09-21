@@ -1,0 +1,225 @@
+.tree-parent {
+    width: 100%;
+    overflow-x: scroll;
+    height: 1000px !important;
+}
+
+.tree-financials .all-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+    .tree-financials .all-box .box .boxes-child .box-child.active,
+    .tree-financials .all-box .box.active {
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    .tree-financials .all-box .box .boxes-child .box-child.disabled,
+    .tree-financials .all-box .box.disabled {
+        opacity: .6;
+        pointer-events: none;
+    }
+
+    .tree-financials .all-box .box .boxes-child .box-child,
+    .tree-financials .all-box .box {
+        background-color: #fff;
+        width: 200px;
+        height: 90px;
+        margin: 0 10px;
+        text-align: center;
+        position: relative;
+        border-radius: 5px;
+    }
+
+        .tree-financials .all-box .box .boxes-child .box-child .toggle-down,
+        .tree-financials .all-box .box .toggle-down {
+            background-color: #d1e1ee;
+            width: 65px;
+            height: 25px;
+            margin: auto;
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #0b466e;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+            transform: translateX(-50%);
+        }
+
+            .tree-financials .all-box .box .boxes-child .box-child .toggle-down.active,
+            .tree-financials .all-box .box .toggle-down.active {
+                background-color: #0568a9;
+                color: #fff;
+            }
+
+            .tree-financials .all-box .box .boxes-child .box-child .toggle-down i,
+            .tree-financials .all-box .box .toggle-down i {
+                font-size: 11px;
+                margin: 0 10px;
+            }
+
+        .tree-financials .all-box .box .boxes-child .box-child i.fas.fa-ellipsis-v,
+        .tree-financials .all-box .box i.fas.fa-ellipsis-v {
+            position: relative;
+            right: -70px;
+            top: 2px;
+            color: #c4c4c4;
+            cursor: pointer;
+            width: 30px;
+            height: 20px;
+        }
+
+        .tree-financials .all-box .box .boxes-child .box-child .toggle-down span,
+        .tree-financials .all-box .box .toggle-down span {
+            font-weight: 600;
+            display: inline-block;
+            font-size: 12px;
+        }
+
+        .tree-financials .all-box .box .boxes-child .box-child p,
+        .tree-financials .all-box .box p {
+            color: #4b4b4b;
+            margin: 0;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .tree-financials .all-box .box .boxes-child .box-child .price,
+        .tree-financials .all-box .box .price {
+            color: #0568a9;
+            font-weight: 700;
+            font-size: 16px;
+        }
+/* .boxes-child {
+  display: flex;
+  position: absolute;
+  right: 30px;
+  left: auto;
+  top: 210px;
+} */
+
+
+.boxes-child {
+    display: flex;
+    position: absolute;
+    top: 170px;
+}
+
+.tree-financials .all-box .box:nth-of-type(5) .boxes-child {
+    left: -216px;
+}
+
+.tree-financials .all-box .box:nth-of-type(6) .boxes-child {
+    left: -400px;
+}
+
+.boxes-child:before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: 110px;
+    left: 110px;
+    height: 2px;
+    background: #a5bacd;
+}
+
+.box-child:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background: #a5bacd;
+    left: calc(50% - 1px);
+    top: -50px;
+}
+
+.box-child:after {
+    position: absolute;
+    content: "\f063";
+    font-family: "Font Awesome 5 Free";
+    left: 93px;
+    top: -24px;
+    font-weight: 900;
+    font-size: 15px;
+    color: #a5bacd;
+}
+
+.tree-financials .all-box .box .boxes-child .box-child .box-child-child {
+    display: flex;
+    position: absolute;
+    top: 170px;
+   /* left: -90px;*/
+}
+
+    .tree-financials .all-box .box .boxes-child .box-child .box-child-child:before {
+        content: '';
+        position: absolute;
+        top: -50px;
+        right: 110px;
+        left: 110px;
+        height: 2px;
+        background: #a5bacd;
+    }
+
+
+.setting-box {
+    position: absolute;
+    right: -70px;
+    top: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 60%) 0px 0px 2px;
+    z-index: 99;
+    flex-direction: column;
+    transition: all 0.2s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+    width: 90px;
+}
+  .setting-box.active {
+        top: 5px;
+        opacity: 1;
+        visibility: visible;
+    }
+    .setting-box button,
+    .setting-box a {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        border: 0;
+        padding: 5px;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 2px;
+        transition: all .1s ease;
+    }
+        .setting-box a{
+            text-decoration:none !important;
+        }
+    .setting-box button:hover,
+    .setting-box a:hover {
+        background-color: #E1E9F0;
+    }
+    .setting-box button i,
+    .setting-box a i {
+        color: #0568ab;
+        font-size: 15px;
+    }
+    .setting-box button span,
+    .setting-box a span {
+        color: #0B466E;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+
+.view-box-chart .form-group {
+    display: flex;
+    flex-direction: column
+}
+
+.view-box-chart .form-group span{
+    color: #0568a9;
+     font-size: 14px;
+}

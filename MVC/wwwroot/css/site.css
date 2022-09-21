@@ -1,0 +1,722 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: italic;
+    font-weight: 200;
+    font-display: swap;
+    src: url('/fonts//Cairo/Cairo-ExtraLight.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-LightItalic.ttf') format('truetype');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-LightItalic.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/fonts//Cairo/Cairo-Light.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-Italic.ttf') format('truetype');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-Italic.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts//Cairo/Cairo-Regular.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-MediumItalic.ttf') format('truetype');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-MediumItalic.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts//Cairo/Cairo-Medium.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf') format('truetype');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts//Cairo/Cairo-SemiBold.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-BoldItalic.ttf') format('truetype');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-BoldItalic.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts//Cairo/Cairo-Bold.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/fonts//Cairo/Cairo-ExtraBold.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url('/fonts//Cairo/Cairo-ExtraLight.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/fonts//Cairo/Cairo-Light.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts//Cairo/Cairo-Regular.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-Medium.ttf') format('truetype');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-Medium.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts//Cairo/Cairo-Medium.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-SemiBold.ttf') format('truetype');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-SemiBold.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts//Cairo/Cairo-SemiBold.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts//Cairo/Cairo-Bold.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-ExtraBold.ttf') format('truetype');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/fonts/Open_Sans/OpenSans-ExtraBold.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/fonts//Cairo/Cairo-ExtraBold.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+* {
+    font-family: 'Mulish', "Cairo", sans-serif;
+}
+
+.spinner-loading {
+    left: 50%;
+}
+
+.second-header .second-header-container {
+    right: 0 !important;
+    left: auto !important;
+}
+
+body.sidebar-collapse .second-header .second-header-container {
+    padding-left: 90px !important;
+    padding-right: 30px !important;
+}
+
+body.sidebar-open .second-header .second-header-container {
+    padding-left: 260px !important;
+    padding-right: 30px !important;
+}
+
+.opportunities-section td .progressSymbolar {
+    transform: translate3d(15%, -20%, 0);
+}
+
+.filter-option-inner {
+    text-align: left;
+}
+
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark {
+    right: 0;
+    left: 15px
+}
+
+a.dropdown-item:after {
+    left: 15px;
+}
+
+.product-list-item.active:after {
+    right: 15px
+}
+
+#productsTable thead tr th {
+    text-align: left !important;
+}
+
+#productsTable td:not(:last-of-type) {
+    text-align: left !important;
+}
+
+.top-tab-links-create-box a:after {
+    content: '';
+    position: absolute;
+    right: -25px;
+    z-index: 100;
+    border: 12px solid;
+    border-color: transparent transparent transparent #ced4da;
+    z-index: 99;
+}
+
+select.form-control {
+    border: 2px solid #f4f6f9;
+    box-shadow: none !important;
+    outline: none;
+}
+
+
+.row-details-customers select {
+    border: 1px solid #DDD !important;
+}
+
+select {
+    border-right: 16px solid #fff !important;
+}
+
+    select:disabled {
+        border-color: #e9ecef !important;
+    }
+
+.table.table-head-fixed thead tr:nth-child(1) th {
+    /*padding-left: 30px !important;*/
+}
+
+.btn.website-link {
+    width: 90px !important;
+    height: 35px;
+}
+
+.employees-list .header.row {
+    text-align: left;
+}
+
+.table.table-head-fixed thead tr:nth-child(1) th:not(:last-of-type) {
+    text-align: left !important;
+}
+
+.table td, .table th {
+    text-align: left !important;
+}
+
+td.clickable-row-actions {
+    text-align: left !important;
+}
+
+
+.table td, .table th {
+    padding: .75rem !important;
+    vertical-align: middle !important;
+}
+
+.modal-footer.modal-footer-suppliers .all-select-supp {
+    margin: 0 5px;
+}
+
+fers .item-request a:not(:last-of-type):after {
+    right: -5px;
+}
+
+th.th-pending span:after {
+    left: -14px;
+    transform: rotateY(180deg);
+}
+
+.pending-span:after {
+    left: -10.7px;
+}
+
+.pending-span:before {
+    left: -14px;
+}
+
+.sales-agent-details,
+.customer-name-details {
+    text-align: left;
+}
+
+.details-bank .header {
+    padding-left: 25px;
+}
+
+.localCurrency {
+    border-right: 0 !important;
+    right: -4px;
+}
+
+
+.input-price input {
+    border-left: 0;
+}
+
+.total-budget .form-group:first-of-type {
+    gap: 122px;
+}
+
+.total-budget .total-eg, .total-budget .total-price {
+    gap: 100px;
+}
+
+#productsTable thead tr th.actions {
+    text-align: right !important;
+}
+
+.total-budget .form-group .form-control {
+    border-left: 0
+}
+
+.search-cat-tree input {
+    padding-left: 33px;
+}
+
+.search-cat-tree i {
+    left: 10px;
+}
+
+.user-panel .info::before {
+    right: 0;
+}
+
+.list-menu-switchdepartment {
+    left: -151px;
+}
+
+    .list-menu-switchdepartment li {
+        text-align: left;
+    }
+
+.item.switchdepartment .list-menu-switchdepartment li.active:after {
+    left: 15px;
+}
+
+.item.switchdepartment:after {
+    right: 45px;
+    content: "\f0da";
+}
+
+.visits-create select {
+    border-left: 0 !important;
+}
+
+.form-group.VisitPeriod span.hours {
+    right: 35px;
+}
+
+.visits-create select.form-control {
+    border-right: 20px solid #fff !important;
+}
+
+
+
+
+
+
+.tender-progress .list-tender-solid li:after {
+    left: 0;
+}
+
+.tender-progress .list-tender-solid li:before {
+    left: 0;
+}
+
+.tender-progress .list-tender-progress li:first-of-type {
+    left: 30px;
+}
+
+.tender-progress .list-tender-progress li:nth-of-type(2) {
+    left: 30px;
+}
+
+.tender-progress .list-tender-progress li:nth-of-type(3) {
+    left: 20px;
+}
+
+.tender-progress .list-tender-progress li:nth-of-type(4) {
+    left: 7px;
+}
+
+.tender-progress .list-tender-progress li:nth-of-type(5) {
+    right: 15px;
+}
+
+.table-country-home thead tr:nth-child(1) th:last-of-type,
+.table-country-home thead tr:nth-child(1) th {
+    text-align: left !important;
+}
+
+table.dataTable > thead > tr > th:not(:last-of-type) {
+    text-align: left !important
+}
+
+.Cenralize {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clickable-row-actions {
+    min-width: 200px;
+}
+
+
+.agency-supplier:after {
+    right: 35px;
+}
+
+.actions-pending span,
+.status-pending .status {
+    width: 80px;
+}
+
+
+td.date-request .exclamation i {
+    left: -25px;
+}
+
+td.type-request .pending-span:after {
+    left: -10.7px;
+}
+
+.btn-add-new-offer {
+    width: 100px !important;
+}
+
+.navbar-umsco .company-change {
+    left: 0;
+}
+
+.avatar-user {
+    margin-right: 25px;
+}
+
+.box-filter {
+    left: 30px;
+}
+
+.AmountSpan,
+.BankInterestSpan {
+    right: 20px;
+}
+
+.pending-popup .box-filter {
+    right: 40px;
+    left: auto;
+    top: 65px;
+}
+
+.filter-row .date-filter,
+.departments-filter,
+.date-filter,
+.status-filter {
+    padding-left: 10px;
+    padding-right: 30px
+}
+
+.check-products.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    right: 65px !important;
+    left: auto !important;
+}
+
+.check-products.custom-switch .custom-control-label::after {
+    right: 32px !important;
+    left: auto !important;
+}
+
+.check-products.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    right: 20px !important;
+}
+
+.dashboard-widjects-content .box .item:before {
+    left: -1px;
+}
+
+.noti-mob-show .navbar-nav.setting-admin .header-panels-container .notifications {
+    right: -65px;
+}
+
+.noti-mob-show .navbar-nav.setting-admin .header-panels-container .fav .fav-dropdown {
+    left: -170px;
+}
+
+.noti-mob-show .icon-open-noti i {
+    right: 170px;
+}
+
+td.text-center span {
+    margin-left: 90px;
+}
+.conversation-parent .message-send .due-date-send {
+    right: -95px;
+}
+.accordion-sp .icheck-primary {
+    left: 5px;
+}
+
+.details-paid::after {
+    margin-left: -35px;
+}
+.details-profit::after {
+    left: -35px;
+}
+
+#datatable_Projects .row ul li::before,
+#ProjectDetails ul li::before {
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+#ProjectDetails .border-right-project {
+    border-right: 1px solid #8298AB !important;
+}
+
+.btn-payment {
+    margin-right: 25px !important;
+}
