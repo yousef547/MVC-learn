@@ -8,49 +8,53 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MVC
 build_property.RootNamespace = MVC
-build_property.ProjectDir = E:\MVC\Basics\MVC\
+build_property.ProjectDir = D:\New folder\MVC\2-MVC Basics\MVC-learn\MVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\MVC\Basics\MVC
+build_property.MSBuildProjectDirectory = D:\New folder\MVC\2-MVC Basics\MVC-learn\MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/MVC/Basics/MVC/Views/Home/Index.cshtml]
+[D:/New folder/MVC/2-MVC Basics/MVC-learn/MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/MVC/Basics/MVC/Views/Home/Privacy.cshtml]
+[D:/New folder/MVC/2-MVC Basics/MVC-learn/MVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/MVC/Basics/MVC/Views/Product/Create.cshtml]
+[D:/New folder/MVC/2-MVC Basics/MVC-learn/MVC/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/MVC/Basics/MVC/Views/Product/Index.cshtml]
+[D:/New folder/MVC/2-MVC Basics/MVC-learn/MVC/Views/Product/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/New folder/MVC/2-MVC Basics/MVC-learn/MVC/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/MVC/Basics/MVC/Views/Product/Update.cshtml]
+[D:/New folder/MVC/2-MVC Basics/MVC-learn/MVC/Views/Product/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/MVC/Basics/MVC/Views/Shared/Error.cshtml]
+[D:/New folder/MVC/2-MVC Basics/MVC-learn/MVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/MVC/Basics/MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/New folder/MVC/2-MVC Basics/MVC-learn/MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/MVC/Basics/MVC/Views/_ViewImports.cshtml]
+[D:/New folder/MVC/2-MVC Basics/MVC-learn/MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/MVC/Basics/MVC/Views/_ViewStart.cshtml]
+[D:/New folder/MVC/2-MVC Basics/MVC-learn/MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/MVC/Basics/MVC/Views/Shared/_Layout.cshtml]
+[D:/New folder/MVC/2-MVC Basics/MVC-learn/MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-q0a04yuu0e

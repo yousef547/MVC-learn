@@ -44,6 +44,7 @@ namespace MVC.Controllers
             {
                 _context.Products.Add(product);
                 _context.SaveChanges();
+                TempData.Add("success", "product created Successfully");
                 return RedirectToAction("Index");
             }
             return View(product);
@@ -85,9 +86,42 @@ namespace MVC.Controllers
                 _context.ChangeTracker.Clear();
                 _context.Products.Update(product);
                 _context.SaveChanges();
+                TempData.Add("success", "product updated Successfully");
+
                 return RedirectToAction("Index");
             }
             return View(product);
+        }
+
+        //GET
+        public IActionResult Delete(int id)
+        {
+            if (id == 0)
+            {
+                return NotFound();
+            }
+            var product = _context.Products.FirstOrDefault(p => p.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return View(product);
+        }
+
+        //POST
+        [HttpPost,ActionName("Delete")]
+        public IActionResult DeletePost(int id)
+        {
+            var product = _context.Products.Find(id);
+
+            if(product == null)
+            {
+                return NotFound();
+            }
+            _context.Products.Remove(product);
+            _context.SaveChanges();
+            TempData.Add("success", "product deleted Successfully");
+            return RedirectToAction("Index");
         }
     }
 }

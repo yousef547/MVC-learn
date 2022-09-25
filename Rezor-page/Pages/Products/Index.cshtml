@@ -1,0 +1,57 @@
+﻿@page
+@model Rezor_page.Pages.Products.IndexModel
+<div class="container p-1">
+    <div class="row pt-1">
+        <div class="col-6">
+            <h2 class="text-primary">Product List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-page="Create" class="btn btn-primary">
+                Create New Product
+            </a>
+        </div>
+    </div>
+</div>
+
+ <table class="table table-bordered table-striped mt-1 w-100 ">
+            <thead>
+                <tr>
+                    <th>
+                        Product Name
+                    </th>
+                    <th class="text-center">
+                        Product Price
+                    </th>
+                    <th class="text-center">
+                        Created Date
+                    </th>
+                    <th class="text-center">
+                        Actions
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model.Products)
+                {
+                    <tr>
+                        <td>
+                            @product.Name
+                        </td>
+                        <td class="text-center">
+                            @product.Price
+                        </td>
+                        <td class="text-center">
+                            @product.CreatedDate
+                        </td>
+                        <td width="10%">
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-warning mx-2 " asp-page="Update"
+                               asp-route-id="@product.Id">Update</a>
+                                <a class="btn btn-danger mx-2 " asp-page="Delete"
+                               asp-route-id="@product.Id">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
